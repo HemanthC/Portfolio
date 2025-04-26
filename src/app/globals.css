@@ -120,3 +120,75 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Custom classes */
+
+/* Globally hide scrollbars */
+html, body {
+  overflow: auto; /* or scroll if you want always visible space */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.theme-transition {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.section-padding {
+  @apply py-16 md:py-24;
+}
+
+.hero-gradient {
+  @apply bg-gradient-to-br from-primary  to-secondary bg-clip-text text-transparent;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-in forwards;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* For section scrolling animations */
+.reveal {
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+}
+
+.slide-left {
+  transform: translateX(-100px);
+}
+
+.slide-right {
+  transform: translateX(100px);
+}
+
+.slide-left.active, .slide-right.active {
+  transform: translateX(0);
+}
