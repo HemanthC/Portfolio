@@ -53,10 +53,10 @@ export default function About() {
               transition={{ duration: 0.6 }}
               className="text-lg leading-relaxed text-justify hyphens-auto break-words"
             >
-              I'm a Full-stack Software Developer with a passion for creating
-              innovative and user-friendly digital solutions. With expertise in
-              both frontend and backend technologies, I specialize in building
-              robust applications that solve real-world problems.
+              I&apos;m a Full-stack Software Developer with a passion for
+              creating innovative and user-friendly digital solutions. With
+              expertise in both frontend and backend technologies, I specialize
+              in building robust applications that solve real-world problems.
             </motion.p>
 
             <motion.p
@@ -68,8 +68,8 @@ export default function About() {
             >
               My journey in software development started during my engineering
               studies, where I discovered my love for coding and
-              problem-solving. Since then, I've worked on various projects, from
-              developing enterprise applications to creating intuitive user
+              problem-solving. Since then, I&apos;ve worked on various projects,
+              from developing enterprise applications to creating intuitive user
               interfaces.
             </motion.p>
 

@@ -135,14 +135,15 @@ function AnimatedSkill({ skill, index }: AnimatedSkillProps) {
   }, [skill.name]);
 
   useEffect(() => {
+    // Store the current value of the ref in a variable
+    const currentRef = skillRef.current;
+
     const observer = new IntersectionObserver(
       ([entry]) => {
-        // Only animate if element is visible and hasn't been animated yet
         if (entry.isIntersecting && !isAnimated.current) {
           isAnimated.current = true;
 
-          // Animate progress bar
-          const progressDuration = 500; // 1.5 second for progress animation
+          const progressDuration = 500;
           const progressStartTime = Date.now();
 
           const animateProgress = () => {
@@ -156,7 +157,6 @@ function AnimatedSkill({ skill, index }: AnimatedSkillProps) {
             if (progress < 1) {
               requestAnimationFrame(animateProgress);
             } else {
-              // Ensure we end at the exact target value
               setProgressValue(skill.level);
               setDisplayedValue(skill.level);
             }
@@ -168,14 +168,15 @@ function AnimatedSkill({ skill, index }: AnimatedSkillProps) {
       { threshold: 0.2 }
     );
 
-    // Start observing the element
-    if (skillRef.current) {
-      observer.observe(skillRef.current);
+    // Use the stored value instead of skillRef.current
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (skillRef.current) {
-        observer.unobserve(skillRef.current);
+      // Use the stored value in the cleanup function
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, [skill.level]);

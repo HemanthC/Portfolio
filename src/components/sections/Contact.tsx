@@ -182,7 +182,8 @@ export default function Contact() {
                 Send Me a Message
               </h2>
               <p className="text-muted-foreground mt-4">
-                I'm here to help with any inquiries, questions, or projects!
+                I&apos;m here to help with any inquiries, questions, or
+                projects!
               </p>
             </div>
             <div className="grid sm:grid-cols-2 gap-6">

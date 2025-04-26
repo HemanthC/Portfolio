@@ -43,7 +43,7 @@ export function useScrollAnimation<T extends HTMLElement>({
 
     const currentRef = ref.current;
     if (currentRef) {
-      let classes = ["reveal"];
+      const classes = ["reveal"];
 
       switch (type) {
         case "fade-in":
