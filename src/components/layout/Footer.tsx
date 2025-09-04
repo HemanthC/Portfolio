@@ -15,18 +15,18 @@ export default function Footer() {
   const socialLinks = [
     {
       name: "GitHub",
-      url: "https://github.com/Kartik-Murthy",
+      url: "https://github.com/HemanthC",
       icon: <FontAwesomeIcon icon={faGithub} size="lg" />,
     },
     {
       name: "LinkedIn",
-      url: "https://linkedin.com/in/kartik10",
+      url: "https://www.linkedin.com/in/hemanthseervi/",
       icon: <FontAwesomeIcon icon={faLinkedin} size="lg" />,
     },
 
     {
       name: "Email",
-      url: "mailto:kartik.spgk@gmail.com",
+      url: "mailto:hemanthseervi21821@gmail.com",
       icon: <Mail className="h-5 w-5" />,
     },
   ];
@@ -95,7 +95,7 @@ export default function Footer() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="space-y-6 max-lg:mx-auto max-lg:text-center"
           >
-            <h2 className="text-2xl font-bold">Kartik Murthy</h2>
+            <h2 className="text-2xl font-bold">Hemanth C</h2>
             <p className="text-muted-foreground max-w-md">
               Full-stack developer specializing in building exceptional digital
               experiences. Available for freelance work and open to new
@@ -148,10 +148,10 @@ export default function Footer() {
                 Available for freelance projects
               </p>
               <a
-                href="mailto:kartik.spgk@gmail.com"
+                href="mailto:hemanthseervi21821@gmail.com"
                 className="text-primary hover:underline block font-medium"
               >
-                kartik.spgk@gmail.com
+                hemanthseervi21821@gmail.com
               </a>
             </div>
           </motion.div>
@@ -165,7 +165,7 @@ export default function Footer() {
           className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center text-center"
         >
           <p className="text-sm text-muted-foreground mb-4 md:mb-0">
-            © {currentYear} Kartik Murthy. All rights reserved.
+            © {currentYear} Hemanth C. All rights reserved.
           </p>
           <div className=" flex md:justify-end">
             <div className="text-sm text-muted-foreground flex items-center">

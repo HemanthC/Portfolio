@@ -21,7 +21,7 @@ const fontDisplay = FontDisplay({
 });
 
 export const metadata: Metadata = {
-  title: "Kartik Murthy | Portfolio",
+  title: "Hemanth C | Portfolio",
   description:
     "Full-stack Software Developer proficient in designing, developing, and delivering innovative end-to-end solutions.",
 };

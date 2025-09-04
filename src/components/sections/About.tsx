@@ -5,6 +5,7 @@ import SectionTitle from "@/components/shared/SectionTitle";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { motion } from "framer-motion";
 import { Code, Globe, Laptop, Zap } from "lucide-react";
+import Image from "next/image";
 
 export default function About() {
   const contentRef = useScrollAnimation<HTMLDivElement>({
@@ -37,11 +38,7 @@ export default function About() {
           >
             <div className="aspect-square w-full max-w-md mx-auto relative rounded-2xl overflow-hidden shadow-2xl">
               {/* Placeholder image - replace with your own */}
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/80 to-secondary/60 flex items-center justify-center">
-                <span className="text-9xl font-display font-bold text-white/90">
-                  K
-                </span>
-              </div>
+              <Image src={"/profile.jpg"} alt={"Profile"} fill />
             </div>
           </motion.div>
 
@@ -53,10 +50,7 @@ export default function About() {
               transition={{ duration: 0.6 }}
               className="text-lg leading-relaxed text-justify hyphens-auto break-words"
             >
-              I&apos;m a Full-stack Software Developer with a passion for
-              creating innovative and user-friendly digital solutions. With
-              expertise in both frontend and backend technologies, I specialize
-              in building robust applications that solve real-world problems.
+              Hi, I&apos;m Hemanth — a full-stack software developer with experience in building scalable applications using React, Redux Toolkit, Spring Boot, and Python. I currently work at BETSOL, where I&apos;ve contributed to enterprise projects involving Salesforce development, API integrations, and test automation, improving efficiency and product quality.
             </motion.p>
 
             <motion.p
@@ -66,11 +60,7 @@ export default function About() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-lg leading-relaxed text-justify hyphens-auto break-words"
             >
-              My journey in software development started during my engineering
-              studies, where I discovered my love for coding and
-              problem-solving. Since then, I&apos;ve worked on various projects,
-              from developing enterprise applications to creating intuitive user
-              interfaces.
+              I enjoy solving problems end-to-end, whether it&apos;s enhancing user experience on the front end or optimizing back-end performance. Outside of work, I&apos;ve built projects like a Kanban Board and an anonymous confession app, reflecting my interest in creating practical and impactful solutions.
             </motion.p>
 
             <motion.div
@@ -195,8 +185,8 @@ export default function About() {
           {[
             { number: "2+", label: "Years Experience" },
             { number: "5+", label: "Projects Completed" },
-            { number: "5+", label: "Happy Clients" },
-            { number: "2", label: "Open Source Contributions" },
+            { number: "3+", label: "Happy Clients" },
+            { number: "500+", label: "Leetcode Problems Solved" },
           ].map((stat, index) => (
             <motion.div
               key={index}

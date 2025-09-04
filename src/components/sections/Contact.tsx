@@ -22,6 +22,7 @@ import { motion } from "framer-motion";
 import { Check, Mail, MapPin, Phone, Send } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
+import LeetCodeIcon from "../shared/Leetcode";
 
 export default function Contact() {
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -43,10 +44,10 @@ export default function Contact() {
 
     emailjs
       .sendForm(
-        "service_topx7mc", // From EmailJS dashboard
-        "template_7aagk7l", // From EmailJS dashboard
+        "service_x6to90c", // From EmailJS dashboard
+        "template_mq51j6n", // From EmailJS dashboard
         formRef.current as HTMLFormElement,
-        "4gF3xEzudabt8edCO" // From EmailJS dashboard
+        "X6y7oezA3sPQb0DBb" // From EmailJS dashboard
       )
       .then((result) => {
         console.log("Email sent successfully:", result.text);
@@ -100,10 +101,10 @@ export default function Contact() {
                   <div>
                     <h3 className="font-semibold">Email</h3>
                     <a
-                      href="mailto:kartik.spgk@gmail.com"
+                      href="mailto:hemanthseervi21821@gmail.com"
                       className="text-muted-foreground hover:text-primary transition-colors"
                     >
-                      kartik.spgk@gmail.com
+                      hemanthseervi21821@gmail.com
                     </a>
                   </div>
                 </div>
@@ -115,10 +116,10 @@ export default function Contact() {
                   <div>
                     <h3 className="font-semibold">Phone</h3>
                     <a
-                      href="tel:+918223027506"
+                      href="tel:+917483925221"
                       className="text-muted-foreground hover:text-primary transition-colors"
                     >
-                      +91 8223027506
+                      +91 7483925221
                     </a>
                   </div>
                 </div>
@@ -130,7 +131,7 @@ export default function Contact() {
                   <div>
                     <h3 className="font-semibold">Location</h3>
                     <p className="text-muted-foreground">
-                      Belagavi, Karnataka, India
+                      Bengaluru, Karnataka, India
                     </p>
                   </div>
                 </div>
@@ -139,26 +140,34 @@ export default function Contact() {
                   <h3 className="font-semibold mb-4">Social Profiles</h3>
                   <div className="flex space-x-4">
                     <Link
-                      href="https://github.com/Kartik-Murthy"
+                      href="https://github.com/HemanthC"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="p-2 bg-card hover:bg-muted rounded-full transition-colors"
+                      className="text-muted-foreground hover:text-foreground transition-colors h-6 w-6 mt-1"
                     >
                       <FontAwesomeIcon icon={faGithub} size="xl" />
                     </Link>
                     <Link
-                      href="https://linkedin.com/in/kartik10"
+                      href="https://www.linkedin.com/in/hemanthseervi/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="p-2 bg-card hover:bg-muted rounded-full transition-colors"
+                      className="text-muted-foreground hover:text-foreground transition-colors h-6 w-6 mt-1"
                     >
                       <FontAwesomeIcon icon={faLinkedin} size="xl" />
                     </Link>
                     <Link
-                      href="mailto:kartik.spgk@gmail.com"
+                      href="https://leetcode.com/u/Hemanth_C/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="p-2 bg-card hover:bg-muted rounded-full transition-colors"
+                      className="pt-1"
+                    >
+                      <LeetCodeIcon />
+                    </Link>
+                    <Link
+                      href="mailto:hemanthseervi21821@gmail.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-muted-foreground hover:text-foreground transition-colors h-6 w-6 mt-1"
                     >
                       <Mail size={24} />
                     </Link>

@@ -24,37 +24,37 @@ export default function Skills() {
   const skills: Skill[] = [
     // Frontend
     { name: "JavaScript", level: 90, category: "frontend" },
-    { name: "React", level: 90, category: "frontend" },
-    { name: "Next.js", level: 85, category: "frontend" },
+    { name: "React", level: 80, category: "frontend" },
     { name: "TypeScript", level: 80, category: "frontend" },
     { name: "HTML5/CSS3", level: 90, category: "frontend" },
     { name: "Redux Toolkit", level: 80, category: "frontend" },
-    { name: "Tailwind CSS", level: 85, category: "frontend" },
-    { name: "Flutter", level: 70, category: "frontend" },
+    { name: "Tailwind CSS", level: 80, category: "frontend" },
 
     // Backend
-    { name: "Node.js", level: 80, category: "backend" },
-    { name: "Express.js", level: 85, category: "backend" },
+    { name: "Java", level: 80, category: "backend" },
+    { name: "Springboot", level: 85, category: "backend" },
+    { name: "Node.js", level: 85, category: "backend" },
     { name: "Python", level: 75, category: "backend" },
-    { name: "Flask", level: 65, category: "backend" },
-    { name: "FastAPI", level: 60, category: "backend" },
+    { name: "Django", level: 65, category: "backend" },
     { name: "RESTful APIs", level: 90, category: "backend" },
-    { name: "GraphQL", level: 70, category: "backend" },
+    { name: "Cucumber BDD", level: 80, category: "backend" },
+    { name: "Junit", level: 80, category: "backend" },
 
     // Database
     { name: "PostgreSQL", level: 80, category: "database" },
     { name: "MySQL", level: 75, category: "database" },
-    { name: "MongoDB", level: 85, category: "database" },
-    { name: "Supabase", level: 75, category: "database" },
-    { name: "Firebase", level: 80, category: "database" },
+    { name: "MongoDB", level: 70, category: "database" },
+    { name: "Supabase", level: 70, category: "database" },
 
     // Tools
+    { name: "Salesforce", level: 90, category: "tools" },
+    { name: "Kafka", level: 70, category: "tools" },
+    { name: "Redis", level: 70, category: "tools" },
     { name: "Git", level: 90, category: "tools" },
     { name: "Docker", level: 70, category: "tools" },
     { name: "CI/CD", level: 65, category: "tools" },
     { name: "JWT", level: 80, category: "tools" },
     { name: "OAuth", level: 75, category: "tools" },
-    { name: "Stripe", level: 70, category: "tools" },
   ];
 
   const filteredSkills = skills.filter((skill) => skill.category === activeTab);
@@ -62,8 +62,8 @@ export default function Skills() {
   const categories = [
     { id: "frontend", label: "Frontend" },
     { id: "backend", label: "Backend" },
-    { id: "database", label: "Database" },
     { id: "tools", label: "Tools" },
+    { id: "database", label: "Database" },
   ];
 
   return (

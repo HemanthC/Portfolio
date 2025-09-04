@@ -142,7 +142,7 @@ export default function Header() {
             transition={{ duration: 0.5 }}
             className="font-display text-xl md:text-2xl font-bold text-primary"
           >
-            Kartik<span className="text-foreground">.dev</span>
+            Hemanth<span className="text-foreground">.dev</span>
           </motion.div>
         </Link>
 

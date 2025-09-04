@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
 import { ArrowRight, Mail } from "lucide-react";
 import Link from "next/link";
+import LeetCodeIcon from "../shared/Leetcode";
 
 export default function Hero() {
   const { scrollToElement } = useSmoothScroll();
@@ -49,7 +50,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-center mb-6 max-[380px]:text-3xl"
           >
-            Hi, I&apos;m <span className="hero-gradient">Kartik Murthy</span>
+            Hi, I&apos;m <span className="hero-gradient">Hemanth C</span>
           </motion.h1>
 
           <motion.p
@@ -84,7 +85,7 @@ export default function Hero() {
               </Link>
             </Button>
             <Button asChild variant="secondary" size="lg">
-              <a href="/Kartik_Murthy_Resume.pdf" download>
+              <a href="/Hemanth_Resume.pdf" download>
                 Download Resume
               </a>
             </Button>
@@ -99,7 +100,7 @@ export default function Hero() {
             <motion.a
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
-              href="https://github.com/Kartik-Murthy"
+              href="https://github.com/HemanthC"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground transition-colors"
@@ -110,7 +111,7 @@ export default function Hero() {
             <motion.a
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
-              href="https://linkedin.com/in/kartik10"
+              href="https://www.linkedin.com/in/hemanthseervi/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground transition-colors"
@@ -121,7 +122,19 @@ export default function Hero() {
             <motion.a
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
-              href="mailto:kartik.spgk@gmail.com"
+              href="https://leetcode.com/u/Hemanth_C/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+            <LeetCodeIcon />
+
+              <span className="sr-only">Leetcode</span>
+            </motion.a>
+            <motion.a
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              href="mailto:hemanthseervi21821@gmail.com"
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
               <Mail size={24} />
