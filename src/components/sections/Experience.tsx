@@ -17,8 +17,8 @@ import {
 
 // Icon mapping based on company or position
 const iconMap = {
-  "QNext AI": <Code size={14} />,
-  "Maangal.com": <Monitor size={14} />,
+  "BETSOL": <Code size={14} />,
+  "Avaya": <Monitor size={14} />,
   Senior: <Star size={14} />,
   Software: <Laptop size={14} />,
   default: <Briefcase size={14} />,
@@ -27,8 +27,8 @@ const iconMap = {
 // Function to determine which icon to use
 const getIcon = (title: string, company: string) => {
   if (title.includes("Senior")) return iconMap["Senior"];
-  if (company === "QNext AI") return iconMap["QNext AI"];
-  if (company === "Maangal.com") return iconMap["Maangal.com"];
+  if (company === "BETSOL") return iconMap["BETSOL"];
+  if (company === "Avaya") return iconMap["Avaya"];
   if (title.includes("Software")) return iconMap["Software"];
   return iconMap["default"];
 };
@@ -184,55 +184,38 @@ function ExperienceItem({
 export default function Experience() {
   const experiences = [
     {
-      title: "Senior Software Development Engineer",
-      company: "QNext AI",
-      period: "Jan 2024 - Present",
+      title: "Software Engineer",
+      company: "BETSOL",
+      period: "Jan 2025 - Present",
       description: [
-        "Spearheaded the development lifecycle from concept to client acquisition, driving business growth.",
-        "Led the design and deployment of major products, increasing web traffic by 40%.",
-        "Mentored junior developers and improved code quality through automated testing frameworks.",
+        "Developed and optimized Apex classes, triggers, and test classes, consistently maintaining 95% code coverage, ensuring system stability and compliance with Salesforce best practices.",
+        "Designed and customized Lightning Web Components (LWC) and Visualforce pages, improving UI efficiency and reducing user clicks by 25%, enhancing productivity for 100+ users.",
+        "Automated business processes using Salesforce Flows and implemented REST API integrations with external systems, reducing manual data entry by 40% and improving data accuracy.",
       ],
-      skills: ["Next.js", "React", "Node.js", "TypeScript", "PostgreSQL"],
+      skills: ["Salesforce", "Apex", "LWC", "Visualforce", "REST APIs"],
       current: true,
     },
     {
-      title: "Software Development Engineer",
-      company: "QNext AI",
-      period: "May 2023 - Dec 2023",
+      title: "Associate Software Engineer",
+      company: "BETSOL",
+      period: "Jul 2023 - Dec 2024",
       description: [
-        "Implemented payment integration and authentication systems using Stripe, Clerk, and Firebase.",
-        "Boosted subscription revenue by 25% through improved user experience and conversion flows.",
-        "Collaborated with product team to ship new features on time and within specifications.",
+        "Built full-stack features with Spring Boot (APIs, Redis, Kafka, cron jobs) and React + Redux Toolkit, improving reusability by 30% and speeding up delivery by 20%",
+        "Enhanced testing with 200+ JUnit tests (90% coverage), Cucumber BDD, WireMock, Playwright, and Appium, cutting manual testing by 50%.",
+        "Improved app quality by fixing React UI/i18n bugs and integrating Meta API with attachment handling for seamless functionality.",
       ],
-      skills: ["React", "Firebase", "Stripe", "Authentication", "UI/UX"],
+      skills: ["Spring Boot", "React", "Redux Toolkit", "Redis", "Kafka", "JUnit", "Cucumber BDD"],
     },
     {
-      title: "Software Development Engineer Intern",
-      company: "QNext AI",
-      period: "Feb 2023 - Apr 2023",
+      title: "Software Engineer Trainee",
+      company: "BETSOL",
+      period: "Feb 2023 - Mar 2023",
       description: [
-        "Assisted in the development of core product features and functionality.",
-        "Contributed to frontend and backend codebases, working with React and Node.js.",
-        "Participated in code reviews and implemented feedback to improve code quality.",
+        "Worked with Linux, Docker, Kubernetes, Flask, and Django, gaining hands-on experience in containerization, orchestration, and scalable web application development.",
+        "Enhanced and optimized APIs in Django microservices, improving performance, scalability, and reliability while documenting endpoints with Swagger.",
+        "Applied microservice architecture best practices, breaking down monolithic applications into independent services for better scalability and efficiency.",
       ],
-      skills: ["JavaScript", "React", "Node.js", "Git", "RESTful APIs"],
-    },
-    {
-      title: "Flutter Developer Intern",
-      company: "Maangal.com",
-      period: "Sep 2022 - Dec 2022",
-      description: [
-        "Developed the Maangal.com app, supporting 1 lakh users across the global Uttarakhandi community.",
-        "Updated the old codebase with Flutter, increasing app performance by 50%.",
-        "Integrated Riverpod and WebSocket, improving app stability and retention by 20%.",
-      ],
-      skills: [
-        "Flutter",
-        "Dart",
-        "Riverpod",
-        "WebSockets",
-        "Mobile Development",
-      ],
+      skills: ["Docker", "Kubernetes", "Django", "Flask", "Linux", "Microservices"],
     },
   ];
 
