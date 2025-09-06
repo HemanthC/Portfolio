@@ -4,7 +4,7 @@
 import SectionTitle from "@/components/shared/SectionTitle";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { motion } from "framer-motion";
-import { Code, Globe, Laptop, Zap } from "lucide-react";
+import { Code, Brain, Laptop, Zap } from "lucide-react";
 import Image from "next/image";
 
 export default function About() {
@@ -96,12 +96,12 @@ export default function About() {
 
               <div className="flex items-start">
                 <div className="mr-4 p-2 bg-primary/10 rounded-lg text-primary">
-                  <Globe size={20} />
+                  <Brain size={20} />
                 </div>
                 <div>
-                  <h3 className="font-semibold">Mobile</h3>
+                  <h3 className="font-semibold">Problem Solving</h3>
                   <p className="text-sm text-muted-foreground">
-                    Cross-platform experiences
+                    Problem solving (leetcode)
                   </p>
                 </div>
               </div>
@@ -153,12 +153,12 @@ export default function About() {
 
               <div className="flex items-start md:mx-auto">
                 <div className="mr-4 p-2 bg-primary/10 rounded-lg text-primary">
-                  <Globe size={20} />
+                  <Brain size={20} />
                 </div>
                 <div>
-                  <h3 className="font-semibold">Mobile</h3>
+                  <h3 className="font-semibold">Problem Solving</h3>
                   <p className="text-sm text-muted-foreground">
-                    Cross-platform experiences
+                    Problem solving (leetcode)
                   </p>
                 </div>
               </div>
